@@ -17,8 +17,8 @@ app.config['UPLOAD_FOLDER'] = 'generated'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Clés API (à stocker dans des variables d'environnement en production)
-API_KEY_1 = os.environ.get('API_KEY_1', 'your-secret-key-1-here')
-API_KEY_2 = os.environ.get('API_KEY_2', 'your-secret-key-2-here')
+API_KEY_1 = os.environ.get('API_KEY_1', 'rw_api_h7K3xL2pNf9sQx')
+API_KEY_2 = os.environ.get('API_KEY_2', 'rw_api_h7Kdfkffrrzejosvh')
 
 # Thèmes disponibles
 THEMES_DISPONIBLES = ['bleu', 'vert', 'rouge', 'violet', 'orange', 'noir']
