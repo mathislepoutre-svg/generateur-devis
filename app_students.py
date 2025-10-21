@@ -32,10 +32,10 @@ def require_api_keys(f):
         key2 = request.headers.get('X-API-Key-2')
         
         if not key1 or not key2:
-            return jsonify({"error": "Clés API manquantes"}), 401
+            return jsonify({"error": "Clés API manquantes et voilà"}), 401
         
         if key1 != API_KEY_1 or key2 != API_KEY_2:
-            return jsonify({"error": "Clés API invalides"}), 401
+            return jsonify({"error": "Clés API invalides et voilà"}), 401
         
         return f(*args, **kwargs)
     return decorated_function
